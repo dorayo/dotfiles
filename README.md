@@ -1,7 +1,6 @@
 dotfiles.git
 ============
-Clone and run this on a Macbook Pro to
-configure your `bash` and `emacs` and `vim` development environment as follows:
+Clone and run this on a Macbook Pro to configure your `zsh` and `emacs` and `vim` development environment as follows:
 
 ```sh
 cd $HOME
