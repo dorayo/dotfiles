@@ -10,6 +10,7 @@ ln -sf dotfiles/.bashrc .
 ln -sf dotfiles/.bashrc_custom .
 ln -sf dotfiles/.vimrc .
 ln -sf dotfiles/.gitconfig .
+ln -sf dotfiles/.zshrc .
 ln -shF dotfiles/.emacs.d .
 ```
 
