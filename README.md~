@@ -14,4 +14,3 @@ ln -sf dotfiles/.zshrc .
 ln -shF dotfiles/.emacs.d .
 ```
 
-You can use .gitignore file for your Xcode project.
