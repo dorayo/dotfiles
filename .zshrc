@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/Users/dorayo/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/Users/dorayo/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:/usr/local/mysql/bin"
 export PATH=/opt/local/bin:$PATH
 export PATH=/opt/local/sbin:$PATH
 export PATH=$PATH:/Applications/ejabberd-14.07/bin
