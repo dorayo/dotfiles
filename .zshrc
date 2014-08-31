@@ -54,6 +54,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/Users/dorayo/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin"
 export PATH=/opt/local/bin:$PATH
 export PATH=/opt/local/sbin:$PATH
+export PATH=$PATH:/Applications/ejabberd-14.07/bin
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -96,6 +97,7 @@ alias du='du -ch -d 1'
 # 2.3) Text and editor commands
 alias mou='/Applications/Mou.app/Contents/MacOS/Mou'
 alias emacs='/usr/local/Cellar/emacs/24.3/Emacs.app/Contents/MacOS/Emacs'
+alias sublime='/Applications/Sublime\ Text\ 2.app/Contents/MacOS/Sublime\ Text\ 2'
 alias em='emacs -nw'     # No X11 windows
 alias eqq='emacs -nw -Q' # No config and no X11
 export EDITOR='emacs'
