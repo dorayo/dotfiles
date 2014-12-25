@@ -100,3 +100,12 @@ set ts=4
 set expandtab
 set cindent
 set shiftwidth=4
+
+inoremap <C-e> <END>
+inoremap <C-a> <HOME>
+inoremap <C-f> <Right>
+inoremap <C-b> <Left>
+inoremap <M-f> <S-Right>
+inoremap <M-b> <S-Left>
+inoremap <M-n> <Down>
+inoremap <M-p> <Up>

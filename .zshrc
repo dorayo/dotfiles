@@ -55,7 +55,6 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/Users/dorayo/bin:/usr/bin:
 export PATH=/opt/local/bin:$PATH
 export PATH=/opt/local/sbin:$PATH
 export PATH=$PATH:/Applications/ejabberd-14.07/bin
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -128,5 +127,5 @@ alias -s bz2='tar -xjvf'
 ## -------------------------
 
 # 3.1) loads nvm for node.js
-[ -s "/Users/dorayo/.nvm/nvm.sh" ] && . "/Users/dorayo/.nvm/nvm.sh" # This loads nvm
+[ -s "/Users/`users`/.nvm/nvm.sh" ] && . "/Users/`users`/.nvm/nvm.sh" # This loads nvm
 
