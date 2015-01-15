@@ -129,3 +129,19 @@ alias -s bz2='tar -xjvf'
 # 3.1) loads nvm for node.js
 [ -s "/Users/`users`/.nvm/nvm.sh" ] && . "/Users/`users`/.nvm/nvm.sh" # This loads nvm
 
+
+# 3.2) Qu Jing iTerm & Terminal Setup Script
+# version 0.4
+# Felix Ding
+# Nov 18, 2014
+#
+function start_qujing {
+  export http_proxy='http://theironislands.f.getqujing.net:42867'
+  export HTTPS_PROXY='http://theironislands.f.getqujing.net:42867'
+}
+#
+# Qu Jing iTerm & Terminal Setup Script
+# version 0.4
+# Felix Ding
+# Nov 18, 2014
+#

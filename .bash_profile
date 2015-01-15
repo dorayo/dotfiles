@@ -63,3 +63,23 @@ export PATH=/usr/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/local/heroku/bin:$PATH # Heroku: https://toolbelt.heroku.com/standalone
+#
+# Qu Jing iTerm & Terminal Setup Script
+# version 0.4
+# Felix Ding
+# Nov 18, 2014
+#
+function start_qujing {
+  export http_proxy='http://theironislands.f.getqujing.net:42867'
+  export HTTPS_PROXY='http://theironislands.f.getqujing.net:42867'
+}
+#
+# Qu Jing iTerm & Terminal Setup Script
+# version 0.4
+# Felix Ding
+# Nov 18, 2014
+#
+function start_qujing {
+  export http_proxy='http://theironislands.f.getqujing.net:42867'
+  export HTTPS_PROXY='http://theironislands.f.getqujing.net:42867'
+}
