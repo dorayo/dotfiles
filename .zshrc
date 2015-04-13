@@ -140,12 +140,12 @@ alias -s bz2='tar -xjvf'
 # Nov 18, 2014
 #
 function start_qujing {
-  export http_proxy='http://theironislands.f.getqujing.net:42867'
-  export HTTPS_PROXY='http://theironislands.f.getqujing.net:42867'
+  export http_proxy='http://theironislands.f.getqujing.net:49320'
+  export HTTPS_PROXY='http://theironislands.f.getqujing.net:49320'
 }
 #
-# Qu Jing iTerm & Terminal Setup Script
-# version 0.4
-# Felix Ding
-# Nov 18, 2014
-#
+
+# 3.3) linode shadowsocks
+# export http_proxy="http://127.0.0.1:1080"
+#export https_proxy="http://127.0.0.1:1080"
+#alias curl="curl -x http://127.0.0.1:1080"
