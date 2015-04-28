@@ -14,7 +14,7 @@ chsh -s /bin/zsh
 ## 下载oh-my-zsh并建立.zshrc的符号链接
 echo "[Info]: Configuring oh-my-zsh ..."
 if [ -d ~/.oh-my-zsh ];then
-    echo "[Info]: ~/.oh-my-zsh already exist!"
+    echo "[Info]: ~/.oh-my-zsh already exists!"
 else
     git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 fi
