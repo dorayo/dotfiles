@@ -55,6 +55,9 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/Users/dorayo/bin:/usr/bin:
 export PATH=/opt/local/bin:$PATH
 export PATH=/opt/local/sbin:$PATH
 export PATH=$PATH:/Applications/ejabberd-14.07/bin
+
+# some node modules will install to this directory
+export PATH=$PATH:/Users/dorayo/node_modules/.bin
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
