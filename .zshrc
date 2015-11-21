@@ -56,8 +56,6 @@ export PATH=/opt/local/bin:$PATH
 export PATH=/opt/local/sbin:$PATH
 export PATH=$PATH:/Applications/ejabberd-14.07/bin
 
-# some node modules will install to this directory
-export PATH=$PATH:/Users/dorayo/node_modules/.bin
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -91,10 +89,10 @@ alias m='less'
 # no need for zsh
 #alias ..='cd ..'
 #alias ...='cd ..;cd ..'
-alias qy='cd /Users/dorayo/qingyun/'
-alias s1='cd /Users/dorayo/qingyun/备课-第一阶段课程'
-alias s2='cd /Users/dorayo/qingyun/备课-第二阶段课程'
-alias s3='cd /Users/dorayo/qingyun/备课-第三阶段课程'
+alias qy='cd /Users/`users`/qingyun/'
+alias s1='cd /Users/`users`/qingyun/备课-第一阶段课程'
+alias s2='cd /Users/`users`/qingyun/备课-第二阶段课程'
+alias s3='cd /Users/`users`/qingyun/备课-第三阶段课程'
 alias md='mkdir'
 alias cl='clear'
 alias du='du -ch -d 1'
@@ -137,18 +135,3 @@ alias -s bz2='tar -xjvf'
 [ -s "/Users/`users`/.nvm/nvm.sh" ] && . "/Users/`users`/.nvm/nvm.sh" # This loads nvm
 
 
-# 3.2) Qu Jing iTerm & Terminal Setup Script
-# version 0.4
-# Felix Ding
-# Nov 18, 2014
-#
-function start_qujing {
-  export http_proxy='http://theironislands.f.getqujing.net:49320'
-  export HTTPS_PROXY='http://theironislands.f.getqujing.net:49320'
-}
-#
-
-# 3.3) linode shadowsocks
-# export http_proxy="http://127.0.0.1:1080"
-#export https_proxy="http://127.0.0.1:1080"
-#alias curl="curl -x http://127.0.0.1:1080"
