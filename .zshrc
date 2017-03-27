@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/Users/dorayo/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:/usr/local/mysql/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/Users/`users`/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:/usr/local/mysql/bin"
 export PATH=/opt/local/bin:$PATH
 export PATH=/opt/local/sbin:$PATH
 export PATH=$PATH:/Applications/ejabberd-14.07/bin
@@ -69,7 +69,10 @@ export PATH=$PATH:/Applications/ejabberd-14.07/bin
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+# python
+export PYTHONPATH="/Users/`users`/codes/python/codes"
 
 ## -----------------------
 ## -- 2) Set up aliases --
@@ -86,22 +89,13 @@ alias ll="ls -alrtF"
 alias la="ls -A"
 alias l="ls -CF"
 alias m='less'
-# no need for zsh
-#alias ..='cd ..'
-#alias ...='cd ..;cd ..'
-alias qy='cd /Users/`users`/qingyun/'
-alias s1='cd /Users/`users`/qingyun/备课-第一阶段课程'
-alias s2='cd /Users/`users`/qingyun/备课-第二阶段课程'
-alias s3='cd /Users/`users`/qingyun/备课-第三阶段课程'
 alias md='mkdir'
 alias cl='clear'
 alias du='du -ch -d 1'
 #alias treeacl='tree -A -C -L 2'
 
 # 2.3) Text and editor commands
-alias mou='/Applications/Mou.app/Contents/MacOS/Mou'
-alias emacs='/usr/local/Cellar/emacs/24.3/Emacs.app/Contents/MacOS/Emacs'
-alias sublime='/Applications/Sublime\ Text\ 2.app/Contents/MacOS/Sublime\ Text\ 2'
+alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
 alias em='emacs -nw'     # No X11 windows
 alias eqq='emacs -nw -Q' # No config and no X11
 export EDITOR='emacs'
@@ -120,7 +114,7 @@ export GREP_OPTIONS='--color=auto'
 export CLICOLOR=1
 export CLICOLORS=gxfxcxdxbxegedabagacad
 
-# 2.6) misc
+# 2.n) misc
 alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
@@ -134,4 +128,10 @@ alias -s bz2='tar -xjvf'
 # 3.1) loads nvm for node.js
 [ -s "/Users/`users`/.nvm/nvm.sh" ] && . "/Users/`users`/.nvm/nvm.sh" # This loads nvm
 
-
+# 3.2) Proxy Setup Script
+# version 0.2
+# Dorayo
+# Feb 10, 2017
+# 
+alias pon='export http_proxy=http://duotai:pjqhwzGRlc@westin.h.xduotai.com:11794;export https_proxy=$http_proxy'
+alias poff='unset http_proxy;unset https_proxy'
