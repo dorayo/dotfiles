@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/Users/`users`/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:/usr/local/mysql/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/Users/`users`/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:/usr/local/mysql/bin:/usr/local/mongodb/bin"
 export PATH=/opt/local/bin:$PATH
 export PATH=/opt/local/sbin:$PATH
 export PATH=$PATH:/Applications/ejabberd-14.07/bin
@@ -72,7 +72,8 @@ export PATH=$PATH:/Applications/ejabberd-14.07/bin
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # python
-export PYTHONPATH="/Users/`users`/codes/python/codes"
+export PYTHONPATH="/usr/local/lib/python2.7/site-packages"
+export PYTHONPATH=PYTHONPATH:"/Users/`users`/codes/python/"
 
 ## -----------------------
 ## -- 2) Set up aliases --
@@ -95,13 +96,12 @@ alias du='du -ch -d 1'
 #alias treeacl='tree -A -C -L 2'
 
 # 2.3) Text and editor commands
-alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
+alias emacs='/usr/local/Cellar/emacs-plus/25.2/bin/emacs'
 alias em='emacs -nw'     # No X11 windows
-alias eqq='emacs -nw -Q' # No config and no X11
-export EDITOR='emacs'
+alias eq='emacs -nw -Q' # No config and no X11
+export EDITOR='em'
 export VISUAL='emacs'
 alias -s html=mate
-alias -s py=em
 alias -s js=em
 alias -s c=em
 alias -s java=em
@@ -133,5 +133,6 @@ alias -s bz2='tar -xjvf'
 # Dorayo
 # Feb 10, 2017
 # 
-alias pon='export http_proxy=http://duotai:pjqhwzGRlc@westin.h.xduotai.com:11794;export https_proxy=$http_proxy'
+# Duotai proxy
+alias pon='export http_proxy=http://duotai:pjqhwzGRlc@westin.h.xduotai.com:11794;export https_proxy=$http_proxy' 
 alias poff='unset http_proxy;unset https_proxy'
