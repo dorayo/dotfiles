@@ -71,10 +71,6 @@ export PATH=$PATH:/Applications/ejabberd-14.07/bin
 # ssh
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-# python
-export PYTHONPATH="/usr/local/lib/python2.7/site-packages"
-export PYTHONPATH=PYTHONPATH:"/Users/`users`/codes/python/"
-
 ## -----------------------
 ## -- 2) Set up aliases --
 ## -----------------------
