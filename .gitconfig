@@ -2,14 +2,16 @@
 	name = dorayo
 	email = yomingyo@gmail.com
 [alias]
-	st = status
+	st = status 
 	ci = commit
 	co = checkout
 	br = branch
 	df = diff
-	unstage = reset HEAD --
+	unstage = reset
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	last = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -1 HEAD
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[core]
+	editor = vim

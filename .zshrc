@@ -55,6 +55,7 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/Users/`users`/bin:/usr/bin
 export PATH=/opt/local/bin:$PATH
 export PATH=/opt/local/sbin:$PATH
 export PATH=$PATH:/Applications/ejabberd-14.07/bin
+export PATH=$PATH:/usr/local/Cellar/elasticsearch/6.2.3/bin/
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -95,8 +96,9 @@ alias du='du -ch -d 1'
 alias emacs='/usr/local/Cellar/emacs-plus/25.2/bin/emacs'
 alias em='emacs -nw'     # No X11 windows
 alias eq='emacs -nw -Q' # No config and no X11
-export EDITOR='em'
-export VISUAL='emacs'
+#export EDITOR='em'
+export EDITOR='vi'
+export VISUAL='vi'
 alias -s html=mate
 alias -s js=em
 alias -s c=em
@@ -132,3 +134,7 @@ alias -s bz2='tar -xjvf'
 # Duotai proxy
 alias pon='export http_proxy=http://duotai:pjqhwzGRlc@westin.h.xduotai.com:11794;export https_proxy=$http_proxy' 
 alias poff='unset http_proxy;unset https_proxy'
+# Shadowsocks proxy
+alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
+alias unsetproxy="unset ALL_PROXY"
+alias ip="curl -i http://cip.cc"
