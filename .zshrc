@@ -45,26 +45,30 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git textmate autojump brew osx)
+plugins=(git textmate autojump brew osx zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/Users/`users`/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/local/bin:/usr/local/mysql/bin:/usr/local/mongodb/bin:/usr/local/redis/src:/usr/local/phantomjs/bin"
-export PATH=/opt/local/bin:$PATH
-export PATH=/opt/local/sbin:$PATH
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export PATH=$PATH:/Users/dorayo/nodejs/npm_global/bin/
+export PATH=$PATH:/usr/local/mysql/bin:/usr/local/mongodb/bin:/usr/local/redis/src:/usr/local/phantomjs/bin
 export PATH=$PATH:/Applications/ejabberd-14.07/bin
 export PATH=$PATH:/usr/local/Cellar/elasticsearch/6.2.3/bin/
+export PATH=/opt/local/sbin:$PATH
+export PATH=/usr/local/opt:$PATH
+export PATH=/usr/local/bin:$PATH
+export PATH=/Users/`users`/bin:$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='mvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -93,17 +97,14 @@ alias du='du -ch -d 1'
 #alias treeacl='tree -A -C -L 2'
 
 # 2.3) Text and editor commands
-alias emacs='/usr/local/Cellar/emacs-plus/25.2/bin/emacs'
+alias emacs='/Applications/Emacs.app/Contents/MacOS/Emacs'
 alias em='emacs -nw'     # No X11 windows
 alias eq='emacs -nw -Q' # No config and no X11
-#export EDITOR='em'
-export EDITOR='vi'
-export VISUAL='vi'
-alias -s html=mate
-alias -s js=em
-alias -s c=em
-alias -s java=em
-alias -s txt=em
+alias -s html=code
+alias -s js=code
+alias -s c=code
+alias -s java=code
+alias -s txt=code
 
 # 2.4) grep options
 export GREP_OPTIONS='--color=auto'
@@ -130,11 +131,8 @@ alias -s bz2='tar -xjvf'
 # version 0.2
 # Dorayo
 # Feb 10, 2017
-# 
-# Duotai proxy
-alias pon='export http_proxy=http://duotai:pjqhwzGRlc@westin.h.xduotai.com:11794;export https_proxy=$http_proxy' 
-alias poff='unset http_proxy;unset https_proxy'
 # Shadowsocks proxy
 alias setproxy="export ALL_PROXY=socks5://127.0.0.1:1080"
 alias unsetproxy="unset ALL_PROXY"
 alias ip="curl -i http://cip.cc"
+

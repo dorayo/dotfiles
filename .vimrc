@@ -19,7 +19,7 @@ endif
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-" allow backspacing over everything in insert mode
+" Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
 if has("vms")
@@ -95,11 +95,38 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" -----------------------------------------------------------
+" 0> let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" 1> python
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'maralla/completor.vim'
+
+
+" 2> html,css,js
+
+" -----------------------------------------------------------
+" all of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 set number
-set ts=4
-set expandtab
-set cindent
-set shiftwidth=4
+set encoding=utf-8
+au BufNewFile,BufRead *.py
+\ set tabstop=4
+\ set shiftwidth=4
+\ set textwidth=79
+\ set expandtab
+\ set autoindent
+\ set fileformat=unix
+au BufNewFile,BufRead *.js, *.html, *.css
+\ set tabstop=2
+\ set shiftwidth=2
 
 inoremap <C-e> <END>
 inoremap <C-a> <HOME>
@@ -109,3 +136,5 @@ inoremap <C-n> <Down>
 inoremap <C-p> <Up>
 inoremap <M-f> <S-Right>
 inoremap <M-b> <S-Left>
+
+let g:completor_python_binary = '/usr/local/lib/python3.6/site-packages'
